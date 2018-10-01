@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.wickerlabs'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+}
+
+
